@@ -1,0 +1,20 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cronjob-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cronjob-ui
+  template:
+    metadata:
+      labels:
+        app: cronjob-ui
+    spec:
+      containers:
+      - name: cronjob-ui
+        image: <your-docker-image>
+        ports:
+        - containerPort: 5000
