@@ -1,7 +1,7 @@
 # PostgreSQL Backup Helm Chart
 
 This Helm Chart is designed to create backups of PostgreSQL databases using Kubernetes CronJobs.
-### NOTE: Currently, this chart is still in development 	:building_construction:
+### NOTE: :construction: Currently, this chart is still in development 	:building_construction:
 
 ## Installation and Configuration
 
