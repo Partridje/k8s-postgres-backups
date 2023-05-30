@@ -31,3 +31,8 @@ helm install postgres-backup ./postgres-backup -f values.yaml
 | `pvc.accessModes` | Режимы доступа к PersistentVolume |
 | `pvc.size` | Размер PersistentVolume |
 
+
+##### Заметки
+
+* Данный Helm chart не создает секреты автоматически. Вы должны создать секреты с паролями баз данных вручную перед установкой Helm chart.
+* Данный Helm chart не создает PersistentVolumeClaim автоматически. Вы должны создать его вручную или использовать уже существующий.
